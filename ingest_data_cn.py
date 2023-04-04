@@ -42,7 +42,7 @@ doc_texts = text_splitter.split_documents(docs)
 
 #调用openai Embeddings
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = 
 embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
 #向量化
 vectordb = Chroma.from_documents(doc_texts, embeddings, persist_directory="./data/cut")
