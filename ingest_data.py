@@ -39,7 +39,7 @@ doc_texts = text_splitter.split_documents(docs)
 
 #调用openai Embeddings
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+
 os.environ["OPENAI_API_KEY"] = "your-openai_api_key"
 embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
 #向量化
